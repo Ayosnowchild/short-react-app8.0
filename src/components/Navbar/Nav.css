@@ -22,7 +22,15 @@ nav {
   font-size: 48px;
   font-weight: 700;
 }
-.link {
+.inactive-link {
+  font-weight: 400;
+  color: black;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+.active-link {
+  font-weight: 700;
+  color: greenyellow;
   text-decoration: none !important;
   cursor: pointer;
 }

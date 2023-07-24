@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import Nav from "../components/Navbar/nav";
+import { NameContext } from "../App";
 import "./home.css";
 function Home() {
+  const { name } = useContext(NameContext);
   return (
     <div>
       <Nav />
       <div className="home">
-        <p>Welcome XXXXXXX</p>
+        <p>Welcome {name} </p>
       </div>
     </div>
   );
